@@ -50,7 +50,7 @@ public class StudentController {
 	@PutMapping("/student/update/{id}") //update the student
 	public Student updateStudents(@PathVariable int id) {  // return the updated student details
 		Student student=studentRepository.findById(id).get();
-		student.setName("poonam");
+		student.setName("Prasad");
 		student.setPercentage(92);
 		
 		studentRepository.save(student);
